@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-banner {
+  width: 100%;
+  max-width: 950px;
+  background: #ff0055;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border: 3px dashed yellow;
+  margin-bottom: 20px;
+  animation: blink 1s infinite;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 950px;
+}
+
+.ad-sidebar {
+  width: 180px;
+  background: #222;
+  border: 2px solid #444;
+  padding: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.ad-box {
+  background: #333;
+  border: 1px solid #ffcc00;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #ffcc00;
+}
+
+.ad-crypto {
+  border-color: #00e676;
+  color: #00e676;
+}
+
+.ad-burnout {
+  border-color: #ff0055;
+  color: #ff0055;
+}
+
+.main-content {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+/* Saldo y Casino */
+.balance-box {
+  background: #00bcd4;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.roulette-container {
+  text-align: center;
+  background: #2a085c;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #9c27b0;
+  margin-bottom: 20px;
+}
+
+canvas {
+  background: transparent;
+  margin: 10px 0;
+}
+
+.roulette-result {
+  font-weight: bold;
+  color: #ffeb3b;
+  margin-top: 5px;
+}
+
+/* Botones y Formulario */
+select, input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: white;
+  border-radius: 4px;
+}
+
+button.btn-action {
+  background: #00e676;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+button.btn-action:hover {
+  background: #00c853;
+}
+
+button.btn-spin {
+  background: #ff9800;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.log-box {
+  background: #000;
+  color: #00ff66;
+  padding: 14px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85em;
+  min-height: 140px;
+  white-space: pre-wrap;
+  margin-top: 15px;
+  border: 1px solid #333;
+}
+
+/* Ventanas Emergentes (Pop-ups) */
+.popup {
+  position: fixed;
+  background: #fff;
+  color: #000;
+  border: 3px solid red;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255,0,0,0.8);
+  z-index: 9999;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  font-weight: bold;
+  background: #ffeb3b;
+  margin: -15px -15px 10px -15px;
+  padding: 8px 15px;
+}
+
+.popup-close {
+  background: red;
+  color: white;
+  border: none;
+  width: auto;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-action-btn {
+  background: red;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
